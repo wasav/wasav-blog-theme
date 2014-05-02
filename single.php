@@ -6,12 +6,11 @@
           <?php while (have_posts()) : the_post(); ?>
             <article class="preview">
                 <header>
-					<span class="post-category"><?php the_category(' '); ?></span>
-                    <h1><?php the_title(); ?></h1>
+					<p class="post-category"><?php the_time( get_option( 'date_format' ).' H:i' ); ?></p>
                 </header>
-                <p><?php the_content(); ?><p/>
+                <div class="post-content"><?php the_content(); ?></div>
                 <footer>
-                    <em>By <?php the_author(); ?> | <?php the_time( get_option( 'date_format' ).' H:i' ); ?></em>
+                    
                 </footer>
                 <hr>
                 <div class="comments">

@@ -5,7 +5,7 @@
 			<span class="post-category"><?php the_category(' '); ?></span>
 			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		</header>
-		<p><?php echo get_the_excerpt(); ?></p>
+		<div class="post-content"><?php echo get_the_excerpt(); ?></div>
 		<footer class="post-category text-right">
 			<em>By <?php the_author(); ?> | <?php the_time( get_option( 'date_format' ).' H:i' ); ?></em>
 		</footer>
