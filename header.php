@@ -1,6 +1,6 @@
 <?php 
-	if(file_exists('../php-components/configuration.php')){
-		include_once '../php-components/configuration.php';
+	if(file_exists( __DIR__. '/../../../../wasav-website/php-components/configuration.php')){
+		include_once( __DIR__. '/../../../../wasav-website/php-components/configuration.php' );
 	}
 ?>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
 	
         <link rel="stylesheet" href="<?php echo WP_THEME_ADDR; ?>/css/bootstrap.min.css" />
         <link rel="stylesheet" href="<?php echo WP_THEME_ADDR; ?>/css/bootstrap-theme.min.css" />
-		<link rel="stylesheet" href="<?php echo WP_THEME_ADDR; ?>style.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo WP_THEME_ADDR; ?>/style.css" type="text/css" />
 		
         <!--[if lt IE 9]>
             <script src="<?php echo WP_THEME_ADDR; ?>/js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
@@ -31,4 +31,4 @@
 	
     </head>
     <body>
-	<?php include_once SITE_ROOT_PATH.'/php-components/header.php'; ?>
+ 	<?php include_once SITE_ROOT_PATH.'/php-components/header.php'; ?>

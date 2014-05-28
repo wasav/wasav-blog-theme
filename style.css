@@ -25,7 +25,7 @@
 
 .site-header .image-src.main-image{
 	/*https://www.flickr.com/photos/mathieu_distefano/13579152303*/
-	background-image:url('../img/shine.jpg');
+	background-image:url('img/shine.jpg');
 }
 
 .site-header .title{
