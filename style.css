@@ -149,3 +149,11 @@ a,a:hover, a:focus {
 .comments textarea{
 	width:100%;
 }
+
+#page404 > h1 {
+	font-size: 7em;
+}
+
+#page404 > p {
+	font-size: 4em;
+}
