@@ -1,6 +1,6 @@
 <?php 
-	if(file_exists( __DIR__. '/../../../../wasav-website/php-components/configuration.php')){
-		include_once( __DIR__. '/../../../../wasav-website/php-components/configuration.php' );
+	if(file_exists( '../php-components/configuration.php')){
+		include_once( '../php-components/configuration.php' );
 	}
 ?>
 <!DOCTYPE html>
