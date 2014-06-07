@@ -22,6 +22,17 @@
         <link rel="stylesheet" href="<?php echo WP_THEME_ADDR; ?>/css/bootstrap-theme.min.css" />
 		<link rel="stylesheet" href="<?php echo WP_THEME_ADDR; ?>/style.css" type="text/css" />
 		
+		<?php 
+		if( isset($GLOBALS['selectedLab'])){
+			foreach($GLOBALS['labs'][$GLOBALS['selectedLab']]["css"] as $n=>$cssName){
+			
+		?>
+			<link rel="stylesheet" href="<?php echo LABS_ADDR."/".$GLOBALS['selectedLab']."/css/".$cssName; ?>" />
+		<?php
+				}
+			}
+		?>
+		
         <!--[if lt IE 9]>
             <script src="<?php echo WP_THEME_ADDR; ?>/js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
