@@ -9,6 +9,11 @@
 	height: 380px;
 }
 
+.site-header-full{
+	bottom:0;
+	height:initial;
+}
+
 .site-header .image-src{
 	position: absolute;
 	top: 0;
