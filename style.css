@@ -11,7 +11,8 @@
 
 .site-header-full{
 	bottom:0;
-	height:initial;
+	/* important to keep this property for small resolutions*/
+	height:initial !important;
 }
 
 .site-header .image-src{
@@ -39,6 +40,11 @@
 	text-align: center;
 	bottom: 150px;
 	color: #FFF;
+}
+
+.site-header .title-404{
+	/* important to keep this property for small resolutions*/
+	bottom:50% !important;
 }
 
 .site-header .title h1{
@@ -94,6 +100,7 @@
 	.site-header .title{
 		bottom: 75px;
 	}
+	
 }
 
 .site-header .menu > ul li.active > a{
