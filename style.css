@@ -49,6 +49,7 @@
 
 .site-header .title h1{
 	font-size: 45px;
+	color: #1CC1F8;
 }
 
 .site-header .title a, 
@@ -104,11 +105,16 @@
 }
 
 .site-header .menu > ul li.active > a{
-	border-bottom-width: 1px;
+	border-bottom-width: 2px;
 	border-bottom-style: solid;
 }
 
-.container-fluid > .posts{
+.site-header .menu > ul li > a{
+	/*color: #F8701C;*/
+	color: #1CC1F8;
+}
+
+.container-fluid > .posts, .container-fluid > .form {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
@@ -168,4 +174,12 @@ a,a:hover, a:focus {
 
 #page404 > p {
 	font-size: 4em;
+}
+
+.form > form > .form-group {
+	width: 80%;
+}
+
+.form > form {
+	margin-bottom: 2em;
 }
