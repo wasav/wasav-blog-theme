@@ -3,7 +3,11 @@
   // get_template_part('loop');
   // get_sidebar();
 ?>
-
+<div class="container-fluid">
+	<div class="form">
+		 <?php get_search_form(); ?> 
+	</div>
+</div>
 <div class="container-fluid">
 	<div class="posts">
 		<?php get_template_part('loop'); ?>
