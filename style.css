@@ -33,11 +33,6 @@
 	background-size: cover;
 }
 
-.site-header .image-src.main-image{
-	/*https://www.flickr.com/photos/mathieu_distefano/13579152303*/
-	background-image:url('img/shine.jpg');
-}
-
 .site-header .title{
 	position: absolute;
 	width: 100%;
