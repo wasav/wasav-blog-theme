@@ -48,7 +48,7 @@
 
 .site-header .title h1{
 	font-size: 45px;
-	color: #1CC1F8;
+	color: ##FFFFFF;
 }
 
 .site-header .title a, 
@@ -181,6 +181,17 @@ a,a:hover, a:focus {
 	margin-bottom: 2em;
 }
 
+.site-header .img-copyright{
+	position: absolute;
+	bottom: 2px;
+	right: 2px;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+	padding: 2px;
+	font-size: 9px;
+}
+
 @media screen and (max-width: 600px){
 	.site-header{
 		height: 250px;
@@ -196,5 +207,19 @@ a,a:hover, a:focus {
 	
 	.container-fluid > .posts{
 		width: 90%;
+	}
+}
+
+@media screen and (max-width:500px){
+	.site-header .title h1{
+		font-size: 35px;
+	}
+	
+	.post-content h1{
+		font-size:35px;
+	}
+	
+	.post-content h2{
+		font-size:25px;
 	}
 }
