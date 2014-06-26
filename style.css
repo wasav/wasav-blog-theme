@@ -181,17 +181,6 @@ a,a:hover, a:focus {
 	margin-bottom: 2em;
 }
 
-.site-header .img-copyright{
-	position: absolute;
-	bottom: 2px;
-	right: 2px;
-	color: black;
-	background-color: white;
-	border-radius: 5px;
-	padding: 2px;
-	font-size: 9px;
-}
-
 @media screen and (max-width: 600px){
 	.site-header{
 		height: 250px;
