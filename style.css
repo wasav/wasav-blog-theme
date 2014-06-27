@@ -173,8 +173,8 @@ a,a:hover, a:focus {
 	font-size: 4em;
 }
 
-.form > form > .form-group {
-	width: 80%;
+.form span.input-group-addon[role="btn"] {
+	cursor: pointer;
 }
 
 .form > form {
