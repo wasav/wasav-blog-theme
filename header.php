@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="<?php echo WP_THEME_ADDR; ?>/css/bootstrap-theme.min.css" />
 		<link rel="stylesheet" href="<?php echo WP_THEME_ADDR; ?>/style.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo SITE_WEB_ADDR; ?>/css/labs.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo SITE_WEB_ADDR; ?>/css/contacts.css" type="text/css" />
 		
 		<?php 
 		if( isset($GLOBALS['selectedLab'])){
