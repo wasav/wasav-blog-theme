@@ -170,21 +170,6 @@ a,a:hover, a:focus {
 	font-style: normal;
 }
 
-.posts-list article h1{
-	letter-spacing: -0.04em;
-	font-size: 50px;
-	line-height: 1.1;
-	margin-bottom: 8px;
-}
-
-.posts-list article h2{
-	letter-spacing: -0.02em;
-	font-size: 32px;
-	line-height: 1.2;
-	padding-top: 31px;
-	margin-bottom: 2px;
-}
-
 .posts-list article header h3{
 	letter-spacing: -0.02em;
 	font-size: 25px;
@@ -237,6 +222,21 @@ a,a:hover, a:focus {
 	color: rgba(0,0,0,0.8);
 }
 
+.post > article .post-content h1{
+	letter-spacing: -0.04em;
+	font-size: 50px;
+	line-height: 1.1;
+	margin-bottom: 8px;
+}
+
+.post > article .post-content h2{
+	letter-spacing: -0.02em;
+	font-size: 32px;
+	line-height: 1.2;
+	padding-top: 31px;
+	margin-bottom: 2px;
+}
+
 .post .comments textarea{
 	width:100%;
 }
@@ -260,8 +260,6 @@ a,a:hover, a:focus {
 .form > form {
 	margin-bottom: 2em;
 }
-
-
 
 body{
 	font-size:18px;
@@ -308,21 +306,26 @@ body{
 		font-size:16px;
 	}
 	
-	.posts-list article h1{
+	.post > article .post-content h1{
 		font-size: 34px;
 		line-height: 1.1;
 	}
 
-	.posts-list article h2{
+	.post > article .post-content h2{
 		font-size: 24px;
 	}
 
-	.posts-list article h3{
+	.posts-list article header h3,
+	.post > article .post-content{
 		font-size: 20px;
 	}
 	
-	.posts.posts-list > article{
+	.posts-list > article{
 		font-size:16px;
+	}
+	
+	.posts-list > article .post-category{
+		font-size:14px;
 	}
 
 }
