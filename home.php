@@ -1,7 +1,5 @@
 <?php
   get_header();
-  // get_template_part('loop');
-  // get_sidebar();
 ?>
 <div class="container-fluid">
 	<div class="form">
@@ -9,7 +7,7 @@
 	</div>
 </div>
 <div class="container-fluid">
-	<div class="posts">
+	<div class="posts-list">
 		<?php get_template_part('loop'); ?>
 	</div>
 </div>

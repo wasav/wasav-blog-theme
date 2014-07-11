@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 <div class="container-fluid">
-	<div class="posts">
+	<div class="post">
     
         <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
-            <article class="preview">
+            <article>
                 <header>
 					<p class="post-category"><?php the_time( get_option( 'date_format' ).' H:i' ); ?></p>
                 </header>
