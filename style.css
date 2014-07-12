@@ -57,8 +57,9 @@ a,a:hover, a:focus {
 }
 
 .site-header .title h1{
-	font-size: 45px;
-	color: ##FFFFFF;
+	font-size: 60px;
+	color: #FFFFFF;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 }
 
 .site-header .title a, 
@@ -330,7 +331,7 @@ body{
 	}
 	
 	.site-header .title h1{
-		font-size: 35px;
+		font-size: 45px;
 	}
 	
 	.post > article .post-content h1{
