@@ -11,6 +11,7 @@
 		</footer>
     </article>
   <?php endwhile; ?>
+  
 <?php else : ?>
   <h1>Sorry, no posts found...</h1>
 <?php endif; ?>

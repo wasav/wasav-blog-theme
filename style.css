@@ -130,7 +130,7 @@ a,a:hover, a:focus {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-	max-width: 55em;
+	max-width: 40em;
 }
 
 .posts-list > article{
@@ -143,6 +143,10 @@ a,a:hover, a:focus {
 	letter-spacing: -0.02em;
 	font-weight: 300;
 	font-style: normal;
+}
+
+.posts-list > article .post-content{
+	text-align:justify;
 }
 
 .post-list > article footer{
@@ -181,11 +185,21 @@ a,a:hover, a:focus {
 			SINGLE POST
 ***************************************************/
 
+.site-header .title .post-metadata{
+	font-size:15px;
+}
+
 .container-fluid > .post {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
 	max-width: 40em;
+}
+
+.post > article header .post-category{
+	color: #b3b3b1;
+	font-size: 16px;
+	text-align: right;
 }
 
 .post > article .post-content{
@@ -233,12 +247,33 @@ a,a:hover, a:focus {
 	letter-spacing: -0.02em;
 	font-size: 32px;
 	line-height: 1.2;
-	padding-top: 31px;
-	margin-bottom: 2px;
 }
+
+.post > article footer{
+	text-align:right;
+	font-size:15px;
+}
+
+/***************************************************
+		COMMENTS
+***************************************************/
+
 
 .post .comments textarea{
 	width:100%;
+}
+
+.post .comments .comment-body{
+	font-size:15px;
+}
+
+.post .comments .comment-meta.commentmetadata{
+	font-size:12px;
+	text-align: right;
+}
+
+.post .comments .comment-respond form label{
+	font-size:15px;
 }
 
 /***************************************************
@@ -292,40 +327,51 @@ body{
 		bottom: 100px;
 	}
 	
-	.container-fluid > .posts{
-		width: 90%;
-	}
-}
-
-@media screen and (max-width:500px){
 	.site-header .title h1{
 		font-size: 35px;
 	}
-		
-	.posts-list article{
-		font-size:16px;
-	}
 	
 	.post > article .post-content h1{
-		font-size: 34px;
+		font-size: 39px;
 		line-height: 1.1;
 	}
 
 	.post > article .post-content h2{
-		font-size: 24px;
-	}
-
-	.posts-list article header h3,
-	.post > article .post-content{
-		font-size: 20px;
+		font-size: 30px;
 	}
 	
-	.posts-list > article{
+	.post > article .post-content h3{
+		font-size: 26px;
+		
+		margin-top: 30px;
+		margin-bottom: 15px;
+		color: rgba(0,0,0,1);
+	}
+	
+	.post > article .post-content{
+		font-size:18px;
+	}
+
+	
+	.posts-list article{
 		font-size:16px;
+	}
+	
+	.posts-list article header h3{
+		font-size: 20px;
 	}
 	
 	.posts-list > article .post-category{
 		font-size:14px;
+	}
+	
+	.container-fluid > .posts-list, 
+	.container-fluid > .form {
+		width: 90%;
+	}
+	
+	.container-fluid > .post {
+		width: 90%;
 	}
 
 }
