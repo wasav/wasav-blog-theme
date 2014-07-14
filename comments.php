@@ -38,7 +38,7 @@ if ( post_password_required() )
 		<p class="no-comments"><?php _e( 'Comments are closed.' , 'wasav-blog-theme' ); ?></p>
 		<?php endif; ?>
 		<footer>
-		<a href="#header-anchor">Top</a>
+		<a class="anchor-link" href="#header-anchor">Top</a>
 		</footer>
 	<?php endif; // have_comments() ?>
 

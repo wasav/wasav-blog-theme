@@ -10,12 +10,11 @@
                 </header>
                 <div class="post-content"><?php the_content(); ?></div>
                 <footer>
-                    <a href="#header-anchor">Top</a>
+					<a class="anchor-link" href="#header-anchor">Top</a>
                 </footer>
                 <hr>
                 <div class="comments">
                   <?php comments_template(); ?>
-				  
                 </div>
             </article>
           <?php endwhile; ?>
