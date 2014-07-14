@@ -277,6 +277,7 @@ a,a:hover, a:focus {
 .post .comments .comment-meta.commentmetadata{
 	font-size:12px;
 	text-align: right;
+	margin-bottom: 10px;
 }
 
 .post .comments .comment-respond form label{
