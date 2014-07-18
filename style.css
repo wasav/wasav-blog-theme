@@ -293,7 +293,7 @@ a,a:hover, a:focus {
 
 .sharing-buttons{
 	text-align:right;
-	margin-bottom:10px;
+	margin-top: 50px;
 }
 
 .sharing-buttons > span{
@@ -307,6 +307,10 @@ a,a:hover, a:focus {
 	padding:10px;
 	border-radius:10px;
 	background-color:lightblue;
+}
+
+.post footer .sharing-buttons{
+	text-align:left;
 }
 
 /***************************************************
