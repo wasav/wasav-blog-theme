@@ -2,6 +2,34 @@
 	if(file_exists( '../php-components/configuration.php')){
 		include_once( '../php-components/configuration.php' );
 	}
+
+	$pageTitle = '';
+	if(function_exists('is_home') && is_home()){ 
+		$pageTitle = SITE_NAME." Blog";	// Index page
+	} else if(function_exists('is_single') && is_single()){
+		$pageTitle = wp_title(SITE_NAME." &raquo;", false);	// Single post
+	} else if(isset($_GET['page'])){
+		if($_GET['page'] === 'labs'){
+			require_once SITE_ROOT_PATH."/pages/labs-utils.php";
+			
+			$labs = getLabInstances();
+			
+			if(isset($_GET['l'])){
+				$labName = $_GET['l'];
+				if(isset($labs[$labName])){
+					$pageTitle = $labs[$labName]['title'];
+				}else{
+					$pageTitle = SITE_NAME." Labs";
+				}
+			} else{
+				$pageTitle = SITE_NAME." Labs";
+			}
+		} else {
+			$pageTitle = SITE_NAME." ".$_GET['page'];
+		}
+	} else{
+		$pageTitle = SITE_NAME;
+	}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -14,7 +42,7 @@
 	<meta charset="<?php  bloginfo('charset'); ?>">
 	<?php } ?>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title><?php if(function_exists('bloginfo')){ bloginfo('name');} else{ echo 'Wasav';} ?></title>
+	<title><?php echo $pageTitle; ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 	

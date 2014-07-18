@@ -10,6 +10,7 @@
                 </header>
                 <div class="post-content"><?php the_content(); ?></div>
                 <footer>
+					<?php include SITE_ROOT_PATH.'/php-components/sharing-buttons.php';  ?>
 					<a class="anchor-link" href="#header-anchor">Top</a>
                 </footer>
                 <hr>
