@@ -406,6 +406,12 @@ body{
 	.post > article .post-content{
 		font-size:18px;
 	}
+	
+	.post > article .post-content a,
+	.post > article .post-content a:hover, 
+	.post > article .post-content a:focus {
+		background-position: 1px 19px;
+	}
 
 	
 	.posts-list article{
