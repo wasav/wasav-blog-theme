@@ -1,6 +1,22 @@
-<?php 
-	if(file_exists( '../php-components/configuration.php')){
-		include_once( '../php-components/configuration.php' );
+<?php
+	
+	// If the config file exists we are either in the blog 
+	// or in the dev version website on the server
+	$configFileExists = file_exists( '../php-components/configuration.php');
+	
+	// We check if we are in the dev version website on the server
+	$isDevVersion = preg_match('/^\/dev/', $_SERVER['REQUEST_URI']);
+
+	// If we are in the dev version website and the requested page is labs
+	if ($isDevVersion && isset($_GET['page'])) {
+		if ($_GET['page'] !== 'labs' && $configFileExists) {
+			include_once( '../php-components/configuration.php' );
+		}
+	}
+	else {
+		if ($configFileExists) {
+			include_once( '../php-components/configuration.php' );
+		}
 	}
 ?>
 <!DOCTYPE html>
