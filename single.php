@@ -6,11 +6,12 @@
           <?php while (have_posts()) : the_post(); ?>
             <article>
                 <header>
-					<p class="post-category"><?php the_time( get_option( 'date_format' ).' H:i' ); ?></p>
+					<p class="post-category"><?php the_time( get_option( 'date_format' ) ); ?></p>
                 </header>
                 <div class="post-content"><?php the_content(); ?></div>
                 <footer>
-                    
+					<a class="anchor-link" href="#header-anchor">Top</a>
+					<?php include SITE_ROOT_PATH.'/php-components/sharing-buttons.php';  ?>
                 </footer>
                 <hr>
                 <div class="comments">
