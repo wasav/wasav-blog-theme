@@ -271,6 +271,18 @@ a,a:hover, a:focus {
 .post > article footer a.anchor-link{
 }
 
+.post > article .post-content div.wp-caption{
+	width:100% !important;
+}
+
+.post > article .post-content div.wp-caption.aligncenter{
+	text-align:center;
+}
+
+.post > article .post-content p.wp-caption-text{
+	font-size:0.8em;
+}
+
 /***************************************************
 		COMMENTS
 ***************************************************/
