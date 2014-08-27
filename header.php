@@ -43,6 +43,8 @@
 	<meta charset="<?php  bloginfo('charset'); ?>">
 	<?php } ?>
 	
+	<link rel="shortcut icon" href="<?php echo WP_THEME_ADDR; ?>/favicon32.ico" />
+	
 	<?php
 	if(isset($labs) && isset($labName) && isset($labs[$labName])){
 	?>
