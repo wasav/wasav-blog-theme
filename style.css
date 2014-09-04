@@ -153,7 +153,7 @@ a,a:hover, a:focus {
 	
 	font-size: 18px;
 	color: rgba(0,0,0,0.6);
-	margin-bottom: 4px;
+	margin-bottom: 25px;
 	letter-spacing: -0.02em;
 	font-weight: 300;
 	font-style: normal;
@@ -161,10 +161,8 @@ a,a:hover, a:focus {
 
 .posts-list > article .post-content{
 	text-align:justify;
-}
-
-.post-list > article footer{
-	text-align:right;
+	margin-left:1em;
+	margin-top: 0.5em;
 }
 
 .posts-list article .post-category,
@@ -172,7 +170,30 @@ a,a:hover, a:focus {
 .posts-list article .post-category a:hover, 
 .posts-list article .post-category a:focus {
 	color:#b3b3b1;
-	font-size:16px;
+	
+}
+
+.posts-list > article footer{
+	margin-top:1em;
+}
+
+.posts-list article footer .post-meta{
+	position:relative;
+	margin-left:1em;
+}
+
+.posts-list article footer .post-meta > div:first-child + div {
+	padding-left:40px;
+	box-sizing:border-box;
+}
+
+.posts-list article footer .post-meta > div:first-child {
+	position:absolute;
+	top:-8px;
+	left:0;
+	
+	overflow:hidden;
+	border-radius:15px;
 }
 
 .posts-list article > header h3{
@@ -182,7 +203,8 @@ a,a:hover, a:focus {
 
 .posts-list article h1,
 .posts-list article h2,
-.posts-list article h3{
+.posts-list article h3,
+.posts-list article h4{
 	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 	font-weight: 700;
 	font-style: normal;

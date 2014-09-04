@@ -2,6 +2,8 @@
 	if(file_exists( '../php-components/configuration.php')){
 		include_once( '../php-components/configuration.php' );
 	}
+	
+	include_once "post-utils.php";
 
 	$pageTitle = '';
 	if(function_exists('is_home') && is_home()){ 

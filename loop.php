@@ -2,13 +2,24 @@
   <?php while (have_posts()) : the_post(); ?>
     <article>
 		<header>
-			<span class="post-category"><?php the_category(' '); ?></span>
 			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		</header>
-		<div class="post-content"><?php echo get_the_excerpt(); ?></div>
-		<footer class="post-category text-right">
-			<em><?php echo get_the_author_meta('display_name'); ?> | <?php the_time( get_option( 'date_format' ) ); ?></em>
+		<div class="post-content">
+			<?php the_excerpt(); ?>
+		</div>
+		<footer class="post-category">
+			<div class="post-meta">
+				<div>
+					<?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
+				</div>
+				<div>
+					<span><?php echo get_the_author_meta('display_name'); ?></span> in <?php the_category(' '); ?>
+					<span class="glyphicon glyphicon-time"></span>
+					<span><?php echo getContentAverageReadingTime(get_the_content()); ?></span>
+				</div>
+			</div>
 		</footer>
+		<hr/>
     </article>
   <?php endwhile; ?>
   
