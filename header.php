@@ -4,6 +4,7 @@
 	}
 	
 	include_once "post-utils.php";
+	
 
 	$pageTitle = '';
 	if(function_exists('is_home') && is_home()){ 
@@ -40,7 +41,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html xmlns:og="http://ogp.me/ns#" class="no-js" <?php if(function_exists('language_attributes')){language_attributes();} ?>> <!--<![endif]-->
     <head>
-        <!-- meta charset="utf-8" -->
+    <meta charset="utf-8">
 	<?php if(function_exists('bloginfo')){ ?>
 	<meta charset="<?php  bloginfo('charset'); ?>">
 	<?php } ?>
