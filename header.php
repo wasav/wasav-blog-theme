@@ -21,7 +21,7 @@
 				$labName = $_GET['l'];
 				if(isset($labs[$labName])){
 					$pageTitle = $labs[$labName]['title'];
-					$demoExcerpt = file_get_contents(SITE_WEB_ADDR."/pages/labs/".$labName."/".$labs[$labName]["excerpt"]);
+					$demoExcerpt = file_get_contents(LABS_PATH."/".$labName."/".$labs[$labName]["excerpt"]);
 				}else{
 					$pageTitle = SITE_NAME." Labs";
 				}
@@ -56,7 +56,7 @@
 	<meta property="og:description" content="<?php echo $demoExcerpt; ?>" />
 	<meta property="description" content="<?php echo $demoExcerpt; ?>" />
 	<meta property="og:url" content="<?php echo SITE_WEB_ADDR."/?page=labs&l=".$labName; ?>" />
-	<meta property="og:image" content="<?php echo SITE_WEB_ADDR."/pages/labs/".$labName."/excerpt-img.png"; ?>" />
+	<meta property="og:image" content="<?php echo LABS_ADDR."/".$labName."/excerpt-img.png"; ?>" />
 
 	<?php
 	} else if(function_exists('is_single') && is_single()){
