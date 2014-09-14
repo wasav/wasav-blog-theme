@@ -19,8 +19,9 @@
 				</div>
 			</div>
 		</footer>
-		<hr/>
+		
     </article>
+	<hr/>
   <?php endwhile; ?>
   
 <?php else : ?>

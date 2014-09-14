@@ -149,11 +149,8 @@ a,a:hover, a:focus {
 
 .posts-list > article{
 	
-	margin-bottom: 1em;
-	
 	font-size: 18px;
 	color: rgba(0,0,0,0.6);
-	margin-bottom: 25px;
 	letter-spacing: -0.02em;
 	font-weight: 300;
 	font-style: normal;
@@ -170,8 +167,8 @@ a,a:hover, a:focus {
 .posts-list article .post-category a:hover, 
 .posts-list article .post-category a:focus {
 	color:#b3b3b1;
-	
 }
+
 
 .posts-list > article footer{
 	margin-top:1em;
@@ -196,6 +193,12 @@ a,a:hover, a:focus {
 	font-size: 25px;
 	line-height: 1.2;
 	margin-bottom: 2px;
+}
+
+.posts-list hr{
+	width:50%;
+	margin-top:40px;
+	margin-bottom:40px;
 }
 
 .post-meta{
