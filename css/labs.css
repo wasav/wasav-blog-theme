@@ -56,6 +56,10 @@
 	margin-right:1em;
 }
 
+.site-header .external-links a div{
+	display:inline-block;
+}
+
 .labs .lab-area  h3{
 	
 	font-weight: 700;
@@ -76,6 +80,10 @@
 	display:inline-block;
 }
 
+.labs .lab-area .supported-browsers li div{
+	display:inline-block;
+}
+
 .labs .lab-area .lab-area-img{
 	margin-top: -120px;
 	height:400px;
@@ -93,54 +101,9 @@ body > div.lab-area{
 	padding-top:520px;
 }
 
-.browser-icon{
-	background-position: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	
-	height:35px;
-	width:35px;
-}
 .platform-icon{
-	background-position: center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	display: inline-block;
-	
-	width: 30px;
-	height: 30px;
+	display: inline-block !important;
 	margin-right: 1em;
-}
-.desktop-icon{
-	background-image: url('../imgs/desktop-icon.png');
-}
-
-.mobile-devices-icon{
-	background-image: url('../imgs/mobile-devices-icon.png');
-}
-
-.chrome-icon{
-	background-image: url('../imgs/browser-icons/chrome.png');
-}
-
-.ie-icon{
-	background-image: url('../imgs/browser-icons/ie.png');
-}
-
-.opera-icon{
-	background-image: url('../imgs/browser-icons/opera.png');
-}
-
-.safari-icon{
-	background-image: url('../imgs/browser-icons/safari.png');
-}
-
-.firefox-icon{
-	background-image: url('../imgs/browser-icons/firefox.png');
 }
 
 /* Media queries section */
@@ -154,16 +117,6 @@ body > div.lab-area{
 @media screen and (max-width: 650px){
 	.labs .lab-area .lab-area-img{
 		height:200px;
-	}
-	
-	.browser-icon{		
-		height:30px;
-		width:30px;
-	}
-	
-	.platform-icon{		
-		height:25px;
-		width:25px;
 	}
 }
 

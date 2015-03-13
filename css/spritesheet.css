@@ -1,0 +1,71 @@
+.sprite {
+    background-image: url(../imgs/spritesheet-1.0.0.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-chrome-35x35 {
+    width: 35px;
+    height: 35px;
+    background-position: -5px -5px;
+}
+
+.sprite-desktop-icon-30x30 {
+    width: 30px;
+    height: 30px;
+    background-position: -50px -5px;
+}
+
+.sprite-firefox-35x35 {
+    width: 35px;
+    height: 35px;
+    background-position: -90px -5px;
+}
+
+.sprite-github-icon-white-36x36 {
+    width: 36px;
+    height: 36px;
+    background-position: -5px -50px;
+}
+
+.sprite-ie-35x35 {
+    width: 35px;
+    height: 35px;
+    background-position: -51px -50px;
+}
+
+.sprite-linkedin-36x36 {
+    width: 36px;
+    height: 36px;
+    background-position: -96px -50px;
+}
+
+.sprite-mobile-devices-icon-30x30 {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -96px;
+}
+
+.sprite-opera-35x35 {
+    width: 35px;
+    height: 35px;
+    background-position: -45px -96px;
+}
+
+.sprite-safari-35x35 {
+    width: 35px;
+    height: 35px;
+    background-position: -90px -96px;
+}
+
+.sprite-twitter-36x36 {
+    width: 36px;
+    height: 36px;
+    background-position: -142px -5px;
+}
+
+.sprite-wordpress-icon-white-36x36 {
+    width: 36px;
+    height: 36px;
+    background-position: -142px -51px;
+}
