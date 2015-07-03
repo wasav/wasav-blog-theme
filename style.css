@@ -258,6 +258,8 @@ article footer .post-category .post-meta {
 	line-height: 1.6;
 	color: rgba(0,0,0,0.7);
 	text-align: justify;
+	
+	word-wrap: break-word;
 }
 
 .post > article .post-content a,
@@ -280,7 +282,7 @@ article footer .post-category .post-meta {
 .post > article .post-content h1,
 .post > article .post-content h2,
 .post > article .post-content h3{
-	color: rgba(0,0,0,0.8);
+	color: rgba(0,0,0,0.9);
 }
 
 .post > article .post-content h1{
