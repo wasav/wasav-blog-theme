@@ -3,10 +3,10 @@
 	function wpse_89494_enqueue_scripts() {
 		
 		// 		STYLES		
-		wp_enqueue_style( 'packedCSS', WP_THEME_ADDR."/css/style-1.3.3.min.css" );
+		wp_enqueue_style( 'packedCSS', WP_THEME_ADDR."/css/style-1.3.4.min.css" );
 		
 		// 		SCRIPTS
-		wp_enqueue_script( 'packedJs', WP_THEME_ADDR."/js/packed-1.3.3.min.js" );
+		wp_enqueue_script( 'packedJs', WP_THEME_ADDR."/js/packed-1.3.4.min.js" );
 		
 	}
 
