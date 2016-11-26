@@ -201,6 +201,11 @@ a,a:hover, a:focus {
 	margin-bottom:40px;
 }
 
+.posts-list .loading-sign{
+	text-align: center;
+	font-weight: bold;
+}
+
 .post-meta{
 	position:relative;
 	display:inline-block;
@@ -213,6 +218,11 @@ a,a:hover, a:focus {
 
 article footer .post-category .post-meta {
 	margin-left:1em;
+}
+
+.posts-list .post-meta .glyphicon-time {
+	margin-right:5px;
+	margin-left:5px;
 }
 
 .post-meta > div:first-child + div {

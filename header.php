@@ -97,10 +97,22 @@
 		<script src="<?php echo WP_THEME_ADDR; ?>/js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
 	<![endif]-->
 
+	<?php 
+		// Generate this only for Wordpress
+		// (posts ajax loading)
+		if(function_exists('bloginfo')){ ?>
+	<script type="text/javascript">
+		var ajaxUrl = "<?php bloginfo('wpurl') ?>/wp-admin/admin-ajax.php";
+	</script>
+	<?php 
+		} 
+	?>
+	
         
 	<?php if(function_exists('wp_head')){ 
 		wp_head(); 
 	} ?>
+	
 		
 		<?php
 		// Labs specific scripts
@@ -112,7 +124,7 @@
 			}
 		}
 	?>
-		
-    </head>
+	    
+	</head>
     <body>
  	<?php include_once SITE_ROOT_PATH.'/php-components/header.php'; ?>
