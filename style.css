@@ -16,17 +16,7 @@ a,a:hover, a:focus {
 	left: 0;
 	right: 0;
 	
-	height: 500px;
-}
-
-.site-header-full{
-	bottom:0;
-	/* important to keep this property for small resolutions*/
-	height:initial !important;
-}
-
-.site-header-labs{
-	height:75px !important;
+	height: 300px;
 }
 
 .site-header .image-src{
@@ -44,19 +34,29 @@ a,a:hover, a:focus {
 	background-size: cover;
 }
 
+.site-header-full{
+	bottom:0;
+	/* important to keep this property for small resolutions*/
+	height:initial !important;
+}
+
+.site-header-labs{
+	height:75px !important;
+}
+
 .site-header .title{
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 90px;
 	color: #FFF;
 }
 
 .site-header .title.main-title{
-	margin-top:170px;
+	margin-top: 90px;
 }
 
 .site-header .title h1{
 	font-size: 50px;
-	color: #FFFFFF;
+	color: #FFF;
 	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
 }
 
@@ -105,7 +105,7 @@ a,a:hover, a:focus {
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing:border-box;
 	
-	padding-top:520px;	/* for site header */
+	padding-top:320px;	/* for site header */
 }
 
 
@@ -127,6 +127,45 @@ a,a:hover, a:focus {
 	/* important to keep this property for small resolutions*/
 	bottom:50% !important;
 }
+
+/* Post case */
+.site-header-post .title {
+	text-align: center;
+}
+
+.site-header-post .title h1 {
+	letter-spacing: -.04em;
+    font-size: 60px;
+    line-height: 1.1;
+	
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+	font-family: Cambria,"Times New Roman",Times,serif;
+	display: inline-block;
+}
+
+.site-header-post{
+	margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.site-header-post .post-meta{
+	margin-left:0;
+	margin-top:2em;
+}
+
+.site-header-post .title hr{
+	border-width: 5px;
+    border-color: rgba(0,0,0,.9);
+}
+
+.site-header-post .title div.title-container {
+	display: inline-block;
+	width: 80%;
+}
+
 
 /***************************************************
 			POSTS LIST: Main blog page
@@ -251,7 +290,7 @@ article footer .post-category .post-meta {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-	max-width: 40em;
+	max-width: 50em;
 }
 
 .post > article header .post-category{
@@ -282,7 +321,7 @@ article footer .post-category .post-meta {
 	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
 	background-repeat: repeat-x;
 	background-size: 2px 2px;
-	background-position: 0 21px;
+	background-position: 0 25px;
 }
 
 .post > article .post-content strong{
@@ -420,19 +459,19 @@ body{
 
 @media screen and (max-width: 1200px){
 	.site-header{
-		height: 400px;
+		height: 200px;
 	}
 	
 	.site-header + div.container-fluid{
-		padding-top:420px;	/* for site header */
+		padding-top:220px;	/* for site header */
 	}
 	
 	.site-header .title{
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 	
 	.site-header .title.main-title{
-		margin-top:150px;
+		margin-top:85px;
 	}
 	
 }
@@ -446,23 +485,23 @@ body{
 
 @media screen and (max-width: 600px){
 	.site-header{
-		height: 350px;
+		height: 150px;
 	}
 	
 	.site-header + div.container-fluid{
-		padding-top:370px;	/* for site header */
+		padding-top:170px;	/* for site header */
 	}
 	
 	.site-header .title{
-		margin-top: 50px;
+		margin-top: 25px;
 	}
 	
 	.site-header .title h1{
-		font-size: 40px;
+		font-size: 20px;
 	}
 	
 	.site-header .title.main-title{
-		margin-top:120px;
+		margin-top: 65px;
 	}
 	
 	.site-header .title.main-title h1{
