@@ -154,6 +154,11 @@ a,a:hover, a:focus {
 .site-header-post .post-meta{
 	margin-left:0;
 	margin-top:2em;
+	color: #b3b3b1;
+}
+
+.site-header-post .post-meta a{
+	color: #b3b3b1;
 }
 
 .site-header-post .title hr{
@@ -419,6 +424,35 @@ article footer .post-category .post-meta {
 .post footer .sharing-buttons{
 	text-align:left;
 }
+
+/*******************************
+		SITE FOOTER
+
+*******************************/
+
+.site-footer {
+	display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.site-footer .author-featurette{
+	width: 50%;
+}
+
+.site-footer .author-featurette > h3,
+.site-footer .author-featurette > div,
+.site-footer .author-featurette ul,
+.site-footer .author-featurette li {
+	display: inline-block;
+}
+
+.site-footer .author-featurette ul {
+	margin-left: 1em;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
 
 /***************************************************
 			Miscellaneous

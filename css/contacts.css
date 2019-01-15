@@ -1,57 +1,39 @@
 
-.contact{
-	max-width: 40em;
-	margin-left: auto;
-	margin-right: auto;
-}
 
-.contact .author-featurette{
-	padding-top: 30px;
-	overflow: hidden;
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
-.contact .author-featurette.align-right{
+.site-footer .author-featurette.align-right{
 	text-align: right;
 }
 
-.contact .author-featurette.align-left{
+.site-footer .author-featurette.align-left{
 	text-align: left;
 }
 
-.contact .author-featurette img.author-img {
+.site-footer .author-featurette img.author-img {
 	margin-top: -20px;
-	height: 150px;
+	height: 65px;
 	border-radius: 20px;
 }
 
-.contact .author-featurette img.pull-right{
+.site-footer .author-featurette img.pull-right{
 	margin-left: 40px;
 }
 
-.contact .author-featurette img.pull-left{
+.site-footer .author-featurette img.pull-left{
 	margin-right: 40px;
 }
 
-.contact .author-featurette h3{
-	font-weight: 700;
+.site-footer .author-featurette h3{
 	font-style: normal;
-	letter-spacing: -.02em;
-	font-size: 25px;
-	line-height: 1.2;
-	margin-bottom: 2px;
+    font-size: 21px;
 }
 
-.contact .author-featurette div.author-description{
-	font-size: 15px;
-}
-.contact .author-featurette div.author-networks ul {
+
+.site-footer .author-featurette div.author-networks ul {
 	padding: 0;
 	margin: 0;
 }
 
-.contact .author-featurette div.author-networks ul li {
+.site-footer .author-featurette div.author-networks ul li {
 	display: inline-block;
 }
 
